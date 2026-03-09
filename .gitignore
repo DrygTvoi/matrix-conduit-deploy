@@ -1,0 +1,17 @@
+# Secrets — never commit these
+.env
+
+# Generated config files (contain domain-specific values and secrets)
+caddy/Caddyfile
+conduit/conduit.toml
+livekit/livekit.yaml
+coturn/turnserver.conf
+element-call/config.json
+well-known/matrix/server
+well-known/matrix/client
+
+# Runtime data
+data/
+
+# Docker volumes (if exported locally)
+*.tar
